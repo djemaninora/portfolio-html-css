@@ -1,0 +1,59 @@
+
+.box{
+	height: 500px;
+	width: 400px;
+	background: url(img/bc1.jpg);
+	background-size: 100% 100%;
+	position: relative;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	cursor: pointer;
+}
+.slider, .slider:before, .slider:after	{
+	height: 0;
+	width: 100%;
+	background-color: rgba(255,255,255,0.8);
+}
+.slider:before, .slider:after{
+	position: relative;
+	content: '';
+}
+.box:hover .slider{
+	height: 100%;
+	transition-duration: 1s;
+}
+.box:hover .slider:before{
+	height: 100%;
+	transition-duration: 1.5s;
+}
+.box:hover .slider:after{
+	height: 100%;
+	transition-duration: 2s;
+}
+.caption{
+	height: 60%;
+	width: 60%;
+	border: 3px solid #262626;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	color: #262626;
+	padding: 10px;
+	font-size: 20px;
+	transform: scale(0);
+}
+.box:hover .caption{
+	transform: scale(1);
+	transition: 1s;
+	transition-delay: 0.5s;
+
+}
